@@ -1,0 +1,23 @@
+{
+  "name": "vue-prototype",
+  "version": "0.1.0",
+  "description": "🎯 基于Vue.js搭建的原型项目。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AC-angle/Vue-prototype.git"
+  },
+  "keywords": [
+    "vue",
+    "webpack"
+  ],
+  "author": "yelloxing",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AC-angle/Vue-prototype/issues"
+  },
+  "homepage": "https://github.com/AC-angle/Vue-prototype#readme"
+}
