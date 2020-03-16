@@ -1,4 +1,5 @@
 const VueLoaderPlugin = require('vue-loader').VueLoaderPlugin;
+const resolve = require('path').resolve;
 
 module.exports = {
     entry: ['./src/entry.js'],
@@ -10,8 +11,11 @@ module.exports = {
     resolve: {
         alias: {
             'vue': 'vue/dist/vue.js',
-            '@': require('path').resolve(__dirname, 'src')
+            '@': resolve(__dirname, 'src')
         }
+    },
+    optimization:{
+        concatenateModules:true
     },
     module: {
         rules: [{
@@ -19,8 +23,12 @@ module.exports = {
             use: ['vue-loader']
         }, {
             test: /\.js$/,
+            //只在src文件夹下查找
+            include: [resolve(__dirname, 'src')],
+            //不会去查找的路径
             exclude: /node_modules/,
-            loader: "babel-loader"
+            // 把Babel编译过的文件缓存起来
+            loader: "babel-loader?cacheDirectory=ture"
         }, {
             test: /\.(css|scss)$/,
             use: ['vue-style-loader', 'css-loader', 'postcss-loader', 'sass-loader']
