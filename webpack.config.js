@@ -28,7 +28,7 @@ module.exports = {
             //不会去查找的路径
             exclude: /node_modules/,
             // 把Babel编译过的文件缓存起来
-            loader: "babel-loader?cacheDirectory=ture"
+            loader: "babel-loader?cacheDirectory=.babel-cache"
         }, {
             test: /\.(css|scss)$/,
             use: ['vue-style-loader', 'css-loader', 'postcss-loader', 'sass-loader']
