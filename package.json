@@ -26,7 +26,7 @@
   "homepage": "https://github.com/AC-angle/Vue-prototype#readme",
   "dependencies": {
     "@yelloxing/normalize.css": "^0.2.1",
-    "image2d": "^1.7.1",
+    "image2d": "^1.7.2",
     "vue": "^2.6.11",
     "vue-router": "^3.1.6"
   },
