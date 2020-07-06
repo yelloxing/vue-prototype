@@ -6,6 +6,7 @@ import Vue from 'vue';
  * ------------------------------
  */
 
+import number from './number'; Vue.filter('numberFtr', number);
 
 /**
  * ------------------------------
