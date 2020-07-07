@@ -3,18 +3,9 @@
     <div class="menu" id="menu-frame">
       <h2>Vue2原型项目</h2>
       <input type="text" placeholder="Type to filter" @keyup="doSearch()" />
-      <h4>指令</h4>
-      <ul>
-        <li @click="$router.push('/inputCtrlDirectives')">输入控制类</li>
-      </ul>
-      <h4>组件</h4>
-      <ul>
-        <li @click="$router.push('/timeComponents')">日期或时间类</li>
-      </ul>
       <h4>过滤器</h4>
       <ul>
         <li @click="$router.push('/moneyFilters')">金额类</li>
-        <li @click="$router.push('/timeFilters')">日期或时间类</li>
       </ul>
       <a href="ttps://github.com/AC-angle/Vue-prototype" target="_blank">Fork me On GitHub</a>
     </div>

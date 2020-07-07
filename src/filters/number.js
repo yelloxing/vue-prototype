@@ -29,9 +29,11 @@ export default function (input, dot) {
 
     // 格式化整数部分
 
-    var preZeroNum = 3 - inputs.length % 3;
+    var preZeroNum = 3 - inputs[0].length % 3;
     if (preZeroNum == 1) inputs[0] = "0" + inputs[0];
     if (preZeroNum == 2) inputs[0] = "00" + inputs[0];
+
+    console.log(preZeroNum, inputs[0]);
 
     inputs[0] = inputs[0].split(/(\d{3})/).join('=').replace(/==/g, ',').replace(/=/g, '');
 
@@ -44,5 +46,5 @@ export default function (input, dot) {
         inputs[1] = inputs[1].substr(0, dot);
     }
 
-    return pre + inputs[0].substr(preZeroNum) + (inputs[1] == "" ? "" : ("." + inputs[1]));
+    return pre + inputs[0].substr(preZeroNum == 3 ? 0 : preZeroNum) + (inputs[1] == "" ? "" : ("." + inputs[1]));
 };

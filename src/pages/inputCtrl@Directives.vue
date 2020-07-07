@@ -1,5 +1,0 @@
-<template>
-  <div class="example-page">
-    <header>输入控制类指令</header>
-  </div>
-</template>

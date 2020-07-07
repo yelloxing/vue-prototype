@@ -11,20 +11,8 @@ const router = new VueRouter({
       component: resolve => require(['./pages/money@Filters.vue'], resolve)
     },
     {
-      path: '/timeFilters',
-      component: resolve => require(['./pages/time@Filters.vue'], resolve)
-    },
-    {
-      path: '/inputCtrlDirectives',
-      component: resolve => require(['./pages/inputCtrl@Directives.vue'], resolve)
-    },
-    {
-      path: '/timeComponents',
-      component: resolve => require(['./pages/time@Components.vue'], resolve)
-    },
-    {
       path: '/*',
-      redirect: 'inputCtrlDirectives'
+      redirect: 'moneyFilters'
     }]
 });
 
