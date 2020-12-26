@@ -25,8 +25,7 @@
   },
   "homepage": "https://github.com/yelloxing/Vue2.js#readme",
   "dependencies": {
-    "@yelloxing/normalize.css": "^0.2.1",
-    "image2d": "^1.11.0",
+    "@hai2007/style": "^0.2.1",
     "vue": "^2.6.11",
     "vue-router": "^3.1.6"
   },
